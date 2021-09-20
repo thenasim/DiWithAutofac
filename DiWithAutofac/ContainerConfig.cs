@@ -12,7 +12,8 @@ namespace DiWithAutofac
             var builder = new ContainerBuilder();
 
             builder.RegisterType<Application>().As<IApplication>();
-            builder.RegisterType<BusinessLogic>().As<IBusinessLogic>();
+            //builder.RegisterType<BusinessLogic>().As<IBusinessLogic>();
+            builder.RegisterType<BetterBusinessLogic>().As<IBusinessLogic>(); // it's now easy to change the implementation
 
             builder.RegisterAssemblyTypes(Assembly.Load(nameof(DemoLibrary)))
                 .Where(t => t.Namespace != null && t.Namespace.Contains(nameof(DemoLibrary.Utilities)))
