@@ -1,7 +1,6 @@
 # Dependency Injection with Autofac
 Dependency injection, or DI, is a design pattern in which a class requests dependencies from external sources rather than creating them.
 
-## Difference between dependency injection and dependency inversion
 > Dependency inversion is a principle and dependency injection is how you make it work.
 
 ## Some benefits of dependency injection
